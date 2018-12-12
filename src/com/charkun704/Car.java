@@ -20,7 +20,9 @@ public class Car extends Vehicle {
     }
 
     public void moveCar(int speed, int direction){
+        System.out.println("# In moveCar before initializing vehicle.move "
+                            +speed+" "+direction);
         move(speed, direction);
-        System.out.println("Car.move()\nSpeed: "+speed+" Direction: "+speed);
+        System.out.println("Car.moveCar()\nSpeed: "+speed+" Direction: "+direction);
     }
 }

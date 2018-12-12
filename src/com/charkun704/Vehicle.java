@@ -12,10 +12,16 @@ public class Vehicle {
     }
 
     public void move(int speed, int direction){
-        currentSpeed += speed;
-        currentDirection += direction;
+        System.out.println("# in vehicle "+speed+" "+direction);
+        currentSpeed = speed;
+        currentDirection = direction;
         System.out.println("Vehicle.move()\nMoving at "+currentDirection+"km/h and direction of "+currentDirection
                             +" degrees");
+    }
+
+    public void speedUp(int speed){
+        this.currentSpeed+=speed;
+        System.out.println("Vehicle.speedUp");
     }
     public String getVehicleType() { return vehicleType; }
 
